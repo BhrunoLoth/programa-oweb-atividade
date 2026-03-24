@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Projeto Autenticação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+    <main class="container">
+        <section class="glass-card">
+            <div class="header">
+                <div class="dashboard-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Acesso Concedido</h1>
+                <p class="dashboard-subtitle">
+                    Bem-vindo de volta, <span id="user-display-name" class="highlight">Usuário</span>.
+                </p>
+            </div>
+
+            <div class="status-card">
+                <h3>Status do Sistema</h3>
+                <div class="status-row">
+                    <span>Nível de Segurança</span>
+                    <span class="status-ok">ENCRIPTADO</span>
+                </div>
+                <div class="status-row">
+                    <span>LocalStorage DB</span>
+                    <span class="status-info">ATIVO</span>
+                </div>
+            </div>
+
+            <button type="button" class="btn-danger" onclick="logout()">Terminar Sessão</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
